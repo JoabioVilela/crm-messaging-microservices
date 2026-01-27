@@ -60,6 +60,8 @@ A aplicação inclui recursos como:
 
 - **Prometheus**
 
+- **Grafana**
+
 - **Observabilidade (O11y)**
 
 - **Kubernetes**
