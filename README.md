@@ -206,6 +206,6 @@ Atenciosamente,
 
 Joabio Vilela
 
-joabio.vilela@gmail.com
+JoabioVilela@proton.me
 
 [https://www.linkedin.com/in/joabiovilela](https://www.linkedin.com/in/joabiovilela)
