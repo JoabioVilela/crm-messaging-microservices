@@ -38,31 +38,33 @@ A aplicação inclui recursos como:
 
 ## Tecnologias e Ferramentas:
 
-- **Java 17**
-
 - **Java 21**
 
-- **RabbitMQ**
-
-- **Swagger UI**
-
-- **Maven**
+- **Java 17**
 
 - **Spring Framework**
 
-- **Hibernate**
+- **Spring Boot**
 
-- **MySQL**
+- **Observabilidade (O11y)**
+
+- **Grafana**
+
+- **Prometheus**
+
+- **RabbitMQ**
 
 - **Docker**
 
 - **Jenkins**
 
-- **Prometheus**
+- **Swagger UI**
 
-- **Grafana**
+- **Maven**
 
-- **Observabilidade (O11y)**
+- **Hibernate**
+
+- **MySQL**
 
 - **Kubernetes**
 
