@@ -9,7 +9,7 @@
 - [Tecnologias e Ferramentas](#tecnologias-e-ferramentas)
 - [Estrutura do Projeto](#estrutura-do-projeto)
   - [Configuração](#configuração)
-  - [Pré-requisitos](#pré-requisitos)
+  - [Pré-requisitos](#pre-requisitos)
   - [Mensageria](#mensageria)
   - [Relacionamentos](#relacionamentos)
 - [Como Executar](#como-executar)
