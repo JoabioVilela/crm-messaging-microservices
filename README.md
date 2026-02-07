@@ -1,4 +1,4 @@
-# Solução para Gestão de Relacionamento com o Cliente, Customer Relationship Management, CRM - (Sistema Distribuído baseado em Arquitetura de Microsserviços, Mensageria, Backend Java API RESTful)
+# Solução para Gestão de Relacionamento com o Cliente (Customer Relationship Management, CRM). Um Sistema Distribuído baseado em Arquitetura de Microsserviços, Backend Java API RESTful, Mensageria, Pipeline CI/CD, Monitoramento, Observabilidade, etc)
 
 ## Demonstração de funcionamento
 <img width="1849" height="1077" alt="image" src="https://github.com/user-attachments/assets/92e533c8-58f7-4379-8e1b-197be4d6c7bf" />
