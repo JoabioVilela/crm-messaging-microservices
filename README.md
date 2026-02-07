@@ -81,7 +81,7 @@ A aplicação inclui recursos como:
 ---
 
 
-## Pré-requisito
+### Pré-requisito
 
 Certifique-se de que você tenha o seguinte instalado em sua máquina:
 
