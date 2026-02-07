@@ -10,6 +10,8 @@
 - [Estrutura do Projeto](#estrutura-do-projeto)
   - [Configuração](#configuração)
   - [Pré-requisitos](#pré-requisitos)
+  - [Mensageria](#mensageria)
+  - [Relacionamentos](#relacionamentos)
 - [Como Executar](#como-executar)
 - [Recursos Adicionais](#recursos-adicionais)
 - [Implementações Futuras](#implementações-futuras)
