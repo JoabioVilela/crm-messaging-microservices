@@ -89,6 +89,20 @@ Certifique-se de que você tenha o seguinte instalado em sua máquina:
 
 ---
 
+### Mensageria
+
+Mensagens são gerenciadas com RabbitMQ e incluem:
+- **Dead Letter** Queue para processamento de mensagens não entregues.
+- 3 níveis de resiliência para alta disponibilidade.
+
+---
+
+### Relacionamentos
+
+- Gerenciamento de relacionamento **OneToMany** entre clientes e tickets.:
+
+---
+
 
 ## Como Executar
 
@@ -163,33 +177,19 @@ Como exemplo, há uma métrica chamada `crm_clients_total`, que permite observar
 ---
 
 
-## Recursos Adicionais
+## Implementações breves
 
-### Mensageria
+- Frontend com Angular ou React.js
 
-- Mensagens são gerenciadas com RabbitMQ e incluem:
-  - **Dead Letter Queue** para processamento de mensagens não entregues.
-  - 3 níveis de resiliência para alta disponibilidade.
+- Microsserviços:
 
-### Relacionamentos
-
-- Gerenciamento de relacionamento **OneToMany** entre clientes e tickets.
+    - Automação de Marketing;
+    - Relatórios e Análises;
+    - Outros.
 
 ---
 
-
-## Implementações futuras
-
-- Frontend com Angular
-
-- 2 Microsserviços:
-
-    - Automação de Marketing
-    - Relatórios e Análises
-
----
-
-## Sugestões de artigos texto para leituras educativas
+## Sugestão de artigos texto para leituras educativas
 
 [O que é, para que serve e o valor do CRM](https://medium.com/guia-empreendedor/o-que-%C3%A9-para-que-serve-e-o-valor-do-crm-ca012e2cbd58)
 
