@@ -186,7 +186,8 @@ Como exemplo, há uma métrica chamada `crm_clients_total`, que permite observar
 - Microsserviços:
 
     - Automação de Marketing;
-    - Relatórios e Análises;
+    - Relatórios;
+    - Análise Preditiva;
     - Outros.
 
 ---
