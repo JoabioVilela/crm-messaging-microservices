@@ -9,7 +9,7 @@
 - [Tecnologias e Ferramentas](#tecnologias-e-ferramentas)
 - [Estrutura do Projeto](#estrutura-do-projeto)
   - [Configuração](#configuração)
-  - [Pré-requisitos](#pre-requisitos)
+  - [Requisito](#Requisito)
   - [Mensageria](#mensageria)
   - [Relacionamentos](#relacionamentos)
 - [Como Executar](#como-executar)
@@ -83,7 +83,7 @@ A aplicação inclui recursos como:
 ---
 
 
-### Pré-requisito
+### Requisito
 
 Certifique-se de que você tenha o seguinte instalado em sua máquina:
 
