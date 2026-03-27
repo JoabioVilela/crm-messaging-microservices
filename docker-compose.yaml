@@ -81,5 +81,51 @@ services:
       - ~/jenkins:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
 
+  # sonarqube-db:
+  #   image: 'postgres:14-alpine'
+  #   container_name: 'sonarqube-db'
+  #   environment:
+  #     - 'POSTGRES_USER=sonar'
+  #     - 'POSTGRES_PASSWORD=sonar'
+  #     - 'POSTGRES_DB=sonarqube'
+  #   ports:
+  #     - '5432:5432'
+  #   networks:
+  #     - monitoring
+  #   volumes:
+  #     - sonarqube_db_data:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U sonar"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+  #   restart: unless-stopped
+
+  # sonarqube:
+  #   image: 'sonarqube:9.9-community'
+  #   container_name: 'sonarqube'
+  #   ports:
+  #     - '9000:9000'
+  #   environment:
+  #     - 'SONAR_JDBC_URL=jdbc:postgresql://sonarqube-db:5432/sonarqube'
+  #     - 'SONAR_JDBC_USERNAME=sonar'
+  #     - 'SONAR_JDBC_PASSWORD=sonar'
+  #     - SONAR_ES_JAVA_OPTS=-Xms512m -Xmx512m
+  #     - SONAR_WEB_JAVA_OPTS=-Xms256m -Xmx256m
+  #   networks:
+  #     - monitoring
+  #   depends_on:
+  #     sonarqube-db:
+  #       condition: service_healthy
+  #   volumes:
+  #     - sonarqube_data:/opt/sonarqube/data
+  #     - sonarqube_logs:/opt/sonarqube/logs
+  #     - sonarqube_extensions:/opt/sonarqube/extensions
+  #   restart: unless-stopped
+
 volumes:
   jenkins_home:
+  # sonarqube_db_data:
+  # sonarqube_data:
+  # sonarqube_logs:
+  # sonarqube_extensions:
