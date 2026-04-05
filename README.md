@@ -21,7 +21,7 @@
 
 ## Descrição
 
-Este repositório contém uma aplicação web desenvolvida em **Java 21**, projetada para gerenciar um sistema CRM. Nela, há 2 microsserviços:
+Este repositório contém uma aplicação web escalável desenvolvida em **Java 21**, projetada para gerenciar um sistema CRM. Nela, há 2 microsserviços:
 
 - Gestão de Clientes e Tickets
 - Notificação
