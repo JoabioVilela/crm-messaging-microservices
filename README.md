@@ -6,6 +6,7 @@
 ## Índice
 
 - [Descrição](#descrição)
+- [Endpoints da API](#endpoints-da-api)
 - [Tecnologias e Ferramentas](#tecnologias-e-ferramentas)
 - [Estrutura do Projeto](#estrutura-do-projeto)
   - [Configuração](#configuração)
@@ -36,6 +37,151 @@ A aplicação inclui recursos como:
 - Validações e tratamento de exceções.
 - Autenticação com **Basic Auth** e controle de acesso.
 - Uso de **DTOs** e **Mapper** para abstração e eficiência, entre outros.
+
+
+
+## Endpoints da API
+
+**Base URL:** `http://localhost:9091`
+
+| Método | Endpoint | Descrição | Parâmetros |
+|:---:|---|---|---|
+| `GET` | `/api/clients` | Listar todos os clientes | — |
+| `GET` | `/api/clients/{id}` | Buscar cliente por ID | `id` |
+| `GET` | `/api/clients/searchByName` | Pesquisar clientes por nome | `name` |
+| `GET` | `/api/clients/searchByCpf` | Pesquisar cliente por CPF | `cpf` |
+| `POST` | `/api/clients` | Cadastrar cliente | Body JSON |
+| `PUT` | `/api/clients/{id}` | Atualizar cliente | `id` + Body JSON |
+| `DELETE` | `/api/clients/{id}` | Excluir cliente | `id` |
+
+### Exemplos de requisições
+
+#### 1. Listar todos os clientes
+
+```http
+GET http://localhost:9091/api/clients
+```
+
+#### 2. Buscar cliente por ID
+
+```http
+GET http://localhost:9091/api/clients/3
+```
+
+**Query Parameters:**
+
+| Parameter | Value |
+|---|---|
+| `id` | `3` |
+
+#### 3. Pesquisar por nome
+
+```http
+GET http://localhost:9091/api/clients/searchByName?name=Cliente%202
+```
+
+**Query Parameters:**
+
+| Parameter | Value |
+|---|---|
+| `name` | `Cliente 2` |
+
+#### 4. Pesquisar por CPF
+
+```http
+GET http://localhost:9091/api/clients/searchByCpf?cpf=12345678902
+```
+
+**Query Parameters:**
+
+| Parameter | Value |
+|---|---|
+| `cpf` | `12345678902` |
+
+#### 5. Cadastrar cliente
+
+**Method:** `POST`
+
+**URL:**
+```http
+POST http://localhost:9091/api/clients
+```
+
+**Content-Type:** `application/json`
+
+**Request Body:**
+
+```json
+{
+  "name": "Joabio de Jesus Vilela",
+  "cpf": "02580455310",
+  "telefone": "11998582365",
+  "category": "Ouro",
+  "tickets": [
+    {
+      "title": "Ticket 6s",
+      "descricao": "Lorem ipsum dolor sit amet. Ex sequi sapiente eos dolor aperiam non consequatur laborum hic dolore repudiandae aut placeat blanditiis. Et ducimus quidem aut voluptatum quidem aut galisum neque."
+    },
+    {
+      "title": "Ticket s7",
+      "descricao": "Lorem ipsum dolor sit amet. Ex sequi sapiente eos dolor aperiam non consequatur laborum hic dolore repudiandae aut placeat blanditiis. Et ducimus quidem aut voluptatum quidem aut galisum neque."
+    }
+  ]
+}
+```
+
+#### 6. Atualizar cliente
+
+**Method:** `PUT`
+
+**URL:**
+```http
+PUT http://localhost:9091/api/clients/5
+```
+
+**Query Parameters:**
+
+| Parameter | Value |
+|---|---|
+| `id` | `5` |
+
+**Content-Type:** `application/json`
+
+**Request Body:**
+
+```json
+{
+  "name": "Joabio Vilela",
+  "cpf": "02580455310",
+  "telefone": "11998582365",
+  "category": "Ouro",
+  "tickets": [
+    {
+      "title": "Ticket 6s",
+      "descricao": "Lorem ipsum dolor sit amet. Ex sequi sapiente eos dolor aperiam non consequatur laborum hic dolore repudiandae aut placeat blanditiis. Et ducimus quidem aut voluptatum quidem aut galisum neque."
+    },
+    {
+      "title": "Ticket s7",
+      "descricao": "Lorem ipsum dolor sit amet. Ex sequi sapiente eos dolor aperiam non consequatur laborum hic dolore repudiandae aut placeat blanditiis. Et ducimus quidem aut voluptatum quidem aut galisum neque."
+    }
+  ]
+}
+```
+
+#### 7. Excluir cliente
+
+```http
+DELETE http://localhost:9091/api/clients/3
+```
+
+**Query Parameters:**
+
+| Parameter | Value |
+|---|---|
+| `id` | `3` |
+
+> **Documentação interativa:** para visualizar os contratos da API e testar os endpoints, acesse o [Swagger UI](http://localhost:9091/swagger-ui/index.html).
+
 
 
 ## Tecnologias e Ferramentas:
