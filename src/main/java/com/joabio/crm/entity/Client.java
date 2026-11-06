@@ -28,7 +28,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
-@SQLDelete(sql = "UPDATE Client SET status = 'Inactive' WHERE id=?")
+@SQLDelete(sql = "UPDATE client SET status = 'Inactive' WHERE id=?")
 @SQLRestriction("status <> 'Inactive'")
 @Entity
 public class Client {
