@@ -38,6 +38,7 @@ A aplicação inclui recursos como:
 - Autenticação com **Basic Auth** e controle de acesso.
 - Uso de **DTOs** e **Mapper** para abstração e eficiência, entre outros.
 
+---
 
 
 ## Endpoints da API
