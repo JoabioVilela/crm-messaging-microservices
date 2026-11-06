@@ -247,7 +247,7 @@ Mensagens são gerenciadas com RabbitMQ e incluem:
 
 ### Relacionamentos
 
-- Gerenciamento de relacionamento **OneToMany** entre clientes e tickets.:
+- Gerenciamento de relacionamento **OneToMany** entre clientes e tickets.
 
 ---
 
