@@ -183,6 +183,7 @@ DELETE http://localhost:9091/api/clients/3
 
 > **Documentação interativa:** para visualizar os contratos da API e testar os endpoints, acesse o [Swagger UI](http://localhost:9091/swagger-ui/index.html).
 
+---
 
 
 ## Tecnologias e Ferramentas:
