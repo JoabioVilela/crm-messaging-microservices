@@ -51,6 +51,7 @@ A aplicação inclui recursos como:
 | `GET` | `/api/clients/{id}` | Buscar cliente por ID | `id` |
 | `GET` | `/api/clients/searchByName` | Pesquisar clientes por nome | `name` |
 | `GET` | `/api/clients/searchByCpf` | Pesquisar cliente por CPF | `cpf` |
+| `GET` | `/api/clients/searchByTelefone` | Pesquisar cliente por telefone | `telefone` |
 | `POST` | `/api/clients` | Cadastrar cliente | Body JSON |
 | `PUT` | `/api/clients/{id}` | Atualizar cliente | `id` + Body JSON |
 | `DELETE` | `/api/clients/{id}` | Excluir cliente | `id` |
@@ -99,7 +100,19 @@ GET http://localhost:9091/api/clients/searchByCpf?cpf=12345678902
 |---|---|
 | `cpf` | `12345678902` |
 
-#### 5. Cadastrar cliente
+#### 5. Pesquisar por telefone
+
+```http
+GET http://localhost:9091/api/clients/searchByTelefone?telefone=71986939934
+```
+
+**Query Parameters:**
+
+| Parameter | Value |
+|---|---|
+| `telefone` | `71986939934` |
+
+#### 6. Cadastrar cliente
 
 **Method:** `POST`
 
@@ -131,7 +144,7 @@ POST http://localhost:9091/api/clients
 }
 ```
 
-#### 6. Atualizar cliente
+#### 7. Atualizar cliente
 
 **Method:** `PUT`
 
@@ -169,7 +182,7 @@ PUT http://localhost:9091/api/clients/5
 }
 ```
 
-#### 7. Excluir cliente
+#### 8. Excluir cliente
 
 ```http
 DELETE http://localhost:9091/api/clients/3
