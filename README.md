@@ -356,7 +356,7 @@ Como exemplo, há uma métrica chamada `crm_clients_total`, que permite observar
 ---
 
 
-## Próximas implementações
+## Implementações Futuras
 
 - Frontend com Angular ou React.js
 
