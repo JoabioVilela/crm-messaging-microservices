@@ -16,7 +16,6 @@
   - [Mensageria](#mensageria)
   - [Relacionamentos](#relacionamentos)
 - [Como Executar](#como-executar)
-- [Monitoramento com Prometheus](#monitoramento-com-prometheus)
 - [Implementações Futuras](#implementações-futuras)
 - [Contato](#contato)
 
