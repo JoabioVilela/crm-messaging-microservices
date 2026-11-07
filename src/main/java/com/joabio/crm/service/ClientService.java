@@ -74,7 +74,7 @@ public class ClientService {
                 .orElseThrow(() -> new RecordNotFoundException(id));
     }
 
-    public List<ClientDTO> findByIntegrada(@NotNull @NotBlank boolean integrada) {
+    public List<ClientDTO> findByIntegrada(boolean integrada) {
         return clientRepository.findByIntegrada(integrada).stream().map(clientMapper::toDTO).toList();
     }
 

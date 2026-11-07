@@ -86,7 +86,7 @@ public class ClientController {
     }
 
     @GetMapping("/searchByIntegrada")
-    public List<ClientDTO> findByIntegrada(@RequestParam @NotNull @NotBlank boolean integrada) {
+    public List<ClientDTO> findByIntegrada(@RequestParam boolean integrada) {
         return clientService.findByIntegrada(integrada);
     }
 
